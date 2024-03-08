@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billy RSVP</title>
-    <link type="image/x-icon" rel="icon" href="./download.ico" >
+    <link type="image/x-icon" rel="icon" href="./download.ico" />
     <style>
       @font-face {
         font-family: "gothamLight";
@@ -31,7 +31,7 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        /* font-family: "gothamLight"; */
+        color: white;
       }
 
       .caslonBd {
@@ -59,7 +59,7 @@
 
       main > h1 {
         text-align: center;
-        color: #8067ac;
+        color: #fed76a;
         font-size: 56px;
         font-family: "caslonDisplayIT";
       }
@@ -81,8 +81,8 @@
       }
 
       .logo {
-        width: 300px;
-        height: 183px;
+        min-width: 300px;
+        max-width: 500px;
       }
 
       .hero-details_info {
@@ -110,7 +110,7 @@
       }
 
       .purple-border {
-        border: 1px solid #8067ac;
+        border: 1px solid #fed76a;
         padding: 4px;
       }
       .form-pad {
@@ -163,6 +163,15 @@
         color: white;
       }
 
+      .formkit-submit {
+        font-family: "caslonBd";
+        font-size: 18px;
+      }
+
+      .formkit-submit span {
+        color: black;
+      }
+
       @media only screen and (max-width: 690px) {
         main > h1 {
           font-size: 32px;
@@ -187,8 +196,8 @@
       </p>
       <section class="hero-details pad-big">
         <div class="hero-details_info">
-          <div class="image-container pad-mega">
-            <img src="./logo.jpg" class="logo" />
+          <div class="image-container">
+            <img src="./logo.png" class="logo" />
           </div>
           <div class="pad-mid">
             <h2 class="box-style pad-small">WHEN</h2>
@@ -219,7 +228,7 @@
                 data-uid="281a06edc5"
                 data-format="inline"
                 data-version="5"
-                data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Thank you! Your response has been recorded.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"Thank you! Your response has been recorded.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
                 min-width="400 500 600 700 800"
               >
                 <div data-style="clean">
@@ -243,9 +252,7 @@
                           save_as="Tag"
                           group="field"
                         >
-                          <legend
-                            style="color: rgb(255, 255, 255); font-weight: 400"
-                          >
+                          <legend style="color: white; font-weight: 400">
                             Let us know by filling out this form.
                           </legend>
                           <div
@@ -254,7 +261,7 @@
                             data-group="checkbox"
                             style="
                               border-color: rgb(68, 68, 68);
-                              color: rgb(255, 255, 255);
+                              color: rgb(0, 0, 0);
                               border-radius: 0px;
                               font-weight: 400;
                             "
@@ -275,7 +282,7 @@
                             data-group="checkbox"
                             style="
                               border-color: rgb(68, 68, 68);
-                              color: rgb(255, 255, 255);
+                              color: rgb(0, 0, 0);
                               border-radius: 0px;
                               font-weight: 400;
                             "
@@ -357,28 +364,81 @@
                         "
                       />
                     </div>
+                    <div class="formkit-field">
+                      <div role="button" tabindex="0">
+                        <fieldset
+                          data-group="checkboxes"
+                          class="formkit-5639"
+                          group="field"
+                          type="Custom"
+                          order="6"
+                          save_as="Tag"
+                        >
+                          <legend style="color: white; font-weight: 400">
+                            Will you be bringing a plus one?
+                          </legend>
+                          <div
+                            class="formkit-checkboxes"
+                            data-element="tags-checkboxes"
+                            data-group="checkbox"
+                            style="
+                              border-color: rgb(68, 68, 68);
+                              color: rgb(0, 0, 0);
+                              border-radius: 0px;
+                              font-weight: 400;
+                            "
+                          >
+                            <input
+                              class="formkit-checkbox"
+                              id="tag-5639-4583815"
+                              type="checkbox"
+                              name="tags[]"
+                              value="4583815"
+                            /><label for="tag-5639-4583815">Yes</label>
+                          </div>
+                          <div
+                            class="formkit-checkboxes"
+                            data-element="tags-checkboxes"
+                            data-group="checkbox"
+                            style="
+                              border-color: rgb(68, 68, 68);
+                              color: rgb(0, 0, 0);
+                              border-radius: 0px;
+                              font-weight: 400;
+                            "
+                          >
+                            <input
+                              class="formkit-checkbox"
+                              id="tag-5639-4583816"
+                              type="checkbox"
+                              name="tags[]"
+                              value="4583816"
+                            /><label for="tag-5639-4583816">No</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
                     <a
-                    href="./BillyJoelEvent.ics"
-                    download="BillyJoelEvent.ics"
-                    class="formkit-submit formkit-submit"
-                    style="
-                      background-color: rgb(0, 0, 0);
-                      color: rgb(255, 255, 255);
-                      border-radius: 0px;
-                      border: 1px solid white;
-                      font-weight: 400;
-                      text-decoration: none;
-                      padding: 12px 24px;
-
-                    "
-                  >
-                  Add to Calendar
-                  </a>
+                      href="./BillyJoelEvent.ics"
+                      download="BillyJoelEvent.ics"
+                      class="formkit-submit formkit-submit"
+                      id="calendar"
+                      style="
+                        background-color: #110601c2;
+                        color: #f6f1d7;
+                        border-radius: 0px;
+                        border: 1px solid white;
+                        text-decoration: none;
+                        padding: 12px 24px;
+                      "
+                    >
+                      Add to Calendar
+                    </a>
                     <button
                       data-element="submit"
                       class="formkit-submit formkit-submit"
                       style="
-                        background-color: rgb(255, 244, 244);
+                        background-color: rgb(255, 255, 255);
                         color: rgb(0, 0, 0);
                         border-radius: 0px;
                         font-weight: 400;
@@ -391,7 +451,6 @@
                       </div>
                       <span class="">Submit RSVP</span>
                     </button>
-
                     <span class="disclosure"
                       >By submitting this form, you agree to receive future
                       marketing communications from Spectrum Reach. You can
@@ -499,8 +558,8 @@
                   .formkit-form[data-uid="281a06edc5"] .formkit-button,
                   .formkit-form[data-uid="281a06edc5"] .formkit-submit {
                     border: 0;
-                    border-radius: 0px;
-                    color: #ffffff;
+                    border-radius: 5px;
+                    color: #000000;
                     cursor: pointer;
                     display: inline-block;
                     text-align: center;
@@ -669,8 +728,8 @@
                     [data-group="checkbox"]
                     input[type="checkbox"]:checked
                     + label::before {
-                    background: #8067ac;
-                    border-color: #8067ac;
+                    background: #10bf7a;
+                    border-color: #10bf7a;
                   }
                   .formkit-form[data-uid="281a06edc5"]
                     [data-group="checkboxes"]
@@ -950,7 +1009,7 @@
                     [data-style="clean"],
                   .formkit-form[data-uid="281a06edc5"][min-width~="800"]
                     [data-style="clean"] {
-                    padding: 0px;
+                    padding: 10px;
                   }
                   .formkit-form[data-uid="281a06edc5"][min-width~="700"]
                     .formkit-fields[data-stacked="false"],
